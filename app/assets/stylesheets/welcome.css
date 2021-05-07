@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@media only screen and (min-width: 1200px) {
+  html {
+    height: 100%;
+  }
+  body {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+  }
+
+  .pixel-me1 {
+    margin-top: 60px;
+    width: 260px;
+    height: 310px;
+    margin-left: 5%;
+    transform: translateX(-300%);
+    animation: come-in 2.85s ease forwards;
+  }
+
+  /* .pixel {
+    margin-top: 100px;
+    position: relative;
+    width: 300px;
+    height: 120px;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    background-color: #06C1DE;
+    border: none;
+    border-radius: 24px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    outline: none;
+  } */
+
+  #message{
+    visibility: hidden;
+  	position:absolute;
+  	left: 800px;
+  	top: 200px;
+    font-size: 40px;
+  }
+
+  #typewriter-message {
+    font-size: 30px;
+    color: #000000;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+    animation-delay: 3.25s;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes cssAnimation {
+    to   { visibility: visible; }
+  }
+
+  @keyframes come-in {
+    to { transform: translateX(0); }
+  }
+
+}
